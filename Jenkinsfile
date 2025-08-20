@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    tools {
-        jdk 'JDK-21'       // Cambia según tu JDK instalado en Jenkins
-        maven 'M3'  // Cambia según tu Maven instalado en Jenkins
-    }
     stages {
         stage('Checkout') {
             steps {
@@ -13,17 +9,9 @@ pipeline {
         }
         stage('Validate Syntax') {
             steps {
-                // Ejecutar Maven solo para validar el proyecto
+                // Ejecutar Maven directamente usando PATH
                 sh 'mvn clean validate'
             }
-        }
-    }
-    post {
-        success {
-            echo 'Revisión de sintaxis completada sin errores.'
-        }
-        failure {
-            echo 'Se encontraron errores de sintaxis.'
         }
     }
 }
