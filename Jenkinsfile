@@ -10,10 +10,12 @@ pipeline {
         stage('Validate Syntax') {
             steps {
                 // Ejecutar Maven usando Windows cmd
-                bat 'mvn clean validate'
+                bat "${tool 'm3'}\\bin\\mvn.bat clean validate"
+
             }
         }
     }
 }
+
 
 
