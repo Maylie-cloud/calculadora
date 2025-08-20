@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven-3.9.11'  // el nombre que pusiste en Global Tool Configuration
+        maven 'M3'  // el nombre que pusiste en Global Tool Configuration
     }
 
     stages {
@@ -18,3 +18,4 @@ pipeline {
         }
     }
 }
+
