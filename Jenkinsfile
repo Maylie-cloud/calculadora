@@ -9,10 +9,11 @@ pipeline {
         }
         stage('Validate Syntax') {
             steps {
-                // Ejecutar Maven directamente usando PATH
-                sh 'mvn clean validate'
+                // Ejecutar Maven usando Windows cmd
+                bat 'mvn clean validate'
             }
         }
     }
 }
+
 
