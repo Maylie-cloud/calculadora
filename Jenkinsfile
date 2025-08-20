@@ -8,12 +8,13 @@ pipeline {
         }
         stage('Validate Syntax') {
             steps {
-                // Comillas internas para que cmd reconozca la ruta con espacios
+                // Correcto: comillas simples de Groovy + comillas dobles internas
                 bat '"C:\\Program Files\\apache-maven-3.9.11\\bin\\mvn.bat" clean validate'
             }
         }
     }
 }
+
 
 
 
