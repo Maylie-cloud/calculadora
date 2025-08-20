@@ -8,12 +8,13 @@ pipeline {
         }
         stage('Validate Syntax') {
             steps {
-                // Ruta correcta a Maven, accesible por Jenkins
-                bat 'C:\\Program Files\\apache-maven-3.9.11\\bin\\mvn.bat clean validate'
+                // Comillas internas para que cmd reconozca la ruta con espacios
+                bat '"C:\\Program Files\\apache-maven-3.9.11\\bin\\mvn.bat" clean validate'
             }
         }
     }
 }
+
 
 
 
