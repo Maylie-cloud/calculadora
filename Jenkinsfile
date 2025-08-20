@@ -1,8 +1,8 @@
 pipeline {
     agent any
     tools {
-        jdk 'JDK-11'       // Cambia según tu JDK instalado en Jenkins
-        maven 'Maven-3.8'  // Cambia según tu Maven instalado en Jenkins
+        jdk 'JDK-21'       // Cambia según tu JDK instalado en Jenkins
+        maven 'M3'  // Cambia según tu Maven instalado en Jenkins
     }
     stages {
         stage('Checkout') {
@@ -27,3 +27,4 @@ pipeline {
         }
     }
 }
+
