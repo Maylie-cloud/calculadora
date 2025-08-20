@@ -9,11 +9,12 @@ pipeline {
         stage('Validate Syntax') {
             steps {
                 // Correcto: comillas simples de Groovy + comillas dobles internas
-                bat '"C:\\Program Files\\apache-maven-3.9.11\\bin\\mvn.bat" clean validate'
+                bat '"‪C:\Users\Maylie\Downloads\maven-mvnd-1.0.2-windows-amd64'
             }
         }
     }
 }
+
 
 
 
